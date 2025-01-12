@@ -22,8 +22,10 @@ Welcome to the Book Store project! This project is designed for showcasing uploa
 To set up the project locally, follow these steps:
 
 1. Clone the repository:
-    **git clone https://github.com/RamiaYounes/Book-Store.git
-2. Setup Angular Project:
+
+   git clone https://github.com/RamiaYounes/Book-Store.git
+   
+3. Setup Angular Project:
    - Navigate into the project directory:
        cd Book-Store/library-project
    - Install node dependencies
@@ -35,7 +37,7 @@ To set up the project locally, follow these steps:
    - See check to see if it works in the browser (Optional: It is required during front-end development only)
       http://localhost:4200
 
-3. Setup Django Project:
+4. Setup Django Project:
    - Open a new Terminal and go to django-library
       $cd /django-library
 
