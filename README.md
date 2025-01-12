@@ -3,8 +3,6 @@
 Welcome to the Book Store project! This project is designed for showcasing uploaded books (free, purchased and favorite books), enabling online reading, facilitating downloads, allowing search by (author name,book type and book title),adding rates and comments,  and allowing ordering based on reviews. Additionally, it provides APIs for library systems. The project is developed using Django and Angular
 
 ## Table of Contents
-
-- Not required to integrate JSON Web Token (JWT) or Laravel Passport.
 - Step by step setup guide (Including some useful hints)
 - Cross-Origin Resource Sharing already enabled
 - Django and Angular project separated(Modouled)
