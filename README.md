@@ -2,6 +2,27 @@
 
 Welcome to the Book Store project! This project is designed for showcasing uploaded books (free, purchased and favorite books), enabling online reading, facilitating downloads, allowing search by (author name,book type and book title),adding rates and comments,  and allowing ordering based on reviews. Additionally, it provides APIs for library systems. The project is developed using Django and Angular
 
+##System Functionality:
+This book store can be visited by 3 types of users: unregistered, registered and admin users.
+
+### Unregistered users …
+- can register as customer
+- can see all books in the system
+- can search for book by (author name,book type and book title)
+- can do 'show more' details for a book (title, category, price,reviews , details)
+### Registered Users…
+- Can Log in or out
+- can see all books in the system
+- can search for book by (author name,book type and book title)
+- can do 'show more' details for a book (title, category, price,reviews , details)
+- can buy a book
+- can read book online
+- can download the book
+- can add review to a book
+- can add comment to a book
+- can add books to cart(purshased book) 
+- can add book to favoraite
+
 ## Table of Contents
 - Step by step setup guide (Including some useful hints)
 - Cross-Origin Resource Sharing already enabled
