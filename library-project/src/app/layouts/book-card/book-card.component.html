@@ -1,0 +1,16 @@
+<div class="cont-b  shadow-sm" (click)="bookDetail(parentData.id)"> 
+    <img src="http://127.0.0.1:8000{{parentData.photos}}" height="150" width="150" alt="book=card" class="card-img my-3">
+    <div class="card-body"> 
+        <div class="clearfix mb-3"> 
+        <small style="font-weight: bold;"> {{parentData.title}}</small>
+    <br>
+        <small class="bg-light text-warning text-center ml-3">{{parentData.book_type}} </small> 
+        <div >
+            <span *ngFor="let i of [1,2,3,4,5]"  [class]="i <=rating?'filled':'empty'">&#9733; </span>
+        </div>
+      
+        <small> {{parentData.price}} </small>  
+              
+    </div>
+    </div>
+   

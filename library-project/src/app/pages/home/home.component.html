@@ -1,0 +1,139 @@
+<div class="feat   "> 
+<div class="  center-t text-center" >
+  <h1  style="color: white;">   WELCOOM TO </h1>
+  <h1  style="color: white;"> &nbsp; &nbsp; LIBRARY </h1>
+</div>
+
+
+  <div class="d-flex justify-content-center pb-3 ">
+  <div class="searchbar">
+      <input class="search_input" type="text" type="search" [(ngModel)]="searchId"name="searchId"  placeholder="Search...">
+      <a [routerLink]="['books/search',{search:searchId}]" type="submit" class="search_icon"><i class="bi bi-search"></i></a>
+    </div>
+</div>
+
+
+</div>
+   <main >
+    <section  style="background-color: var(--primary-color)" id="services" class="pad">
+        <div class="  container-c"  >
+            <div class="text-center">
+                <br>
+                <h2 class="section-heading text-uppercase " style="color: white; "> Raiting Books</h2>
+                <h4 class="section-heading text-uppercase mb-3" style="color: white;">Top five </h4>
+                <br>
+                
+            </div>
+            <div class="row row-cols-2 row-cols-xs-3 row-cols-sm-3 row-cols-md-3 row-cols-lg-5  ">
+                <div class="col " *ngFor="let book of rating|slice:0:5;"> 
+                  <div class="cont-b  shadow-sm" (click)="bookDetail(book.id)"> 
+                    <img src="http://127.0.0.1:8000{{book.photos}}" height="200" width="200"  class="card-img my-3" alt="...">
+                     <div class="card-body">
+                       <div class="clearfix mb-3"> 
+                       
+                        <h6 style="font-weight: bold;"> {{book.title}}</h6>
+                        <span *ngFor="let i of [1,2,3,4,5]"  [class]="i <=book.avg_rate?'filled':'empty'">&#9733; </span>
+                      
+                       </div> 
+                      
+                        </div> 
+              </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    
+    </main>
+
+
+<section class="page-section  bg-light" >
+    <div class="container-c justify-content-center" >
+        <div class="text-center">
+           <h2 class="section-heading  text-uppercase pb-5 ">Latest Books</h2>
+           
+        </div>
+   
+ 
+<div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
+  
+<div class="col" *ngFor="let book of latestBooks">
+    <div class="cont-b" (click)="bookDetail(book.id)">
+        <img src="http://127.0.0.1:8000{{book.photos}}" height="300" width="300" alt="book=card" class="card-img">
+        <div class="card-body">
+            <div class="clearfix mb-3"> 
+             <br>
+             <h6 style="font-weight: bold;"> {{book.title}}</h6>
+             <br>
+             <span>{{book.added_date|date:"d-M-Y"}}</span>
+             <br>
+              <span *ngFor="let i of [1,2,3,4,5]"  [class]="i <=book.avg_rate?'filled':'empty'">&#9733; </span>
+       
+           
+            </div> 
+           
+             </div> 
+       </div>
+    
+    </div>
+</div> 
+  
+</div>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

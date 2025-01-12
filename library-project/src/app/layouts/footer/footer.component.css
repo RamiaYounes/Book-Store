@@ -1,0 +1,12 @@
+footer{
+    text-align: center;
+    padding: 1rem;
+    position: relative; /* Position relative */
+    bottom: 0;
+    width: 100%; /* Full width */
+   
+}
+.site-logo{
+    font-size: 1.2em;
+}
+

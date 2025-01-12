@@ -1,0 +1,32 @@
+.pad{
+    padding-top: 5%;
+    padding-bottom: 5%; 
+}
+.page-section{
+    padding-top: 10%;
+    
+  margin-bottom: 1rem;
+  
+}
+h2{
+   
+    margin-bottom: 2%;
+}
+
+label{
+    
+    font-size: 1em;  
+}
+.col-lg-3 {
+    width: 25%;}
+
+
+
+.empty{
+    color:gray
+}
+
+
+
+
+

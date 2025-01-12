@@ -1,0 +1,57 @@
+.featured-section{
+    padding: 130px;
+    padding-right: 130px;
+    padding-bottom: 130px;
+    background-color: var(--primary-color);
+}
+
+.p{
+    margin: 0.8rem 0;
+    line-height: 1.37;
+}
+.col-md-9{
+    
+position: relative;
+    overflow: hidden;
+    grid-column: span var(--num-right-col);
+    margin-left: var(--right-col-left-offset);}
+
+.text-1 {
+    font-size:1.5rem;
+    line-height: 4.6rem;}
+.Divider--largeMargin {
+        margin-top: 75px;
+    }
+.Divider {
+        background-color: #cfccc9;
+        background-color: black;
+        height: 0.1rem;
+        border: 0;
+ }
+.text2{
+    font-family: Copernicus, "Libre Baskerville", Georgia, serif;
+    color: #596392;
+    
+    font-weight: 600;
+    font-size: 0.5rem;
+    line-height: 3.8rem;
+}
+span{
+    cursor:pointer;
+    font-size: 2em;  
+}
+.filled {
+    font-size: 2em;
+    color: #ffc107;
+  }
+.empty{
+    color:gray
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+.app-body{
+    min-height: calc(100vh - 100px); /* Adjust this value based on footer height */
+  padding-bottom: 50px; /* Space for footer */
+   
+}

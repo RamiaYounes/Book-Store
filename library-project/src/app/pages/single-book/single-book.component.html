@@ -1,0 +1,145 @@
+<div class="container-c mt-5  ">
+
+
+  <div class=" row justify-content-between ">
+    <div class=" col-md-3 col-lg-2 col-xl-3 p-3 ">
+      <img src="http://127.0.0.1:8000{{book.photos}}" alt="book=card" class="card-img-top"
+        style="position:sticky;top:112px">
+    </div>
+    <div class=" col-md-7 col-lg-8  col-xl-8 p-5">
+      <div class="card">
+        <div class="card shadow-effect">
+          <div class="card-body ">
+            <h3> {{book.title}}</h3>
+            <div>
+              <span style="cursor: none;" *ngFor="let i of [1,2,3,4,5]"
+                [class]="i <=book.avg_rate?'filled':'empty'">&#9733; </span>
+            </div>
+            <br>
+            <h5 class="bg-light text-danger  mt-1"> {{book.author_full_name}}</h5>
+            <br>
+            <p>{{book.short_description}}</p>
+            <br>
+            <h6> {{book.book_type}} </h6>
+            <br>
+            <h6 class="bg-light text-warning ml-1"> {{book.price}}$ </h6>
+            <br>
+
+
+            <!-- Button trigger modal -->
+            <button type="button" [style.display]="read?'block':'none'" class="btn-sg" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              Read
+            </button>
+            <button type="button" (click)="readBook()" [style.display]="readOnline?'block':'none'" class="btn-sg ">Read
+              Online </button>
+            <!--       <button type="button" (click)="readBooks(book.price)" [style.display]="readOnline?'block':'none'"   class="btn-sg " >Read Online </button>-->
+            <button type="button" (click)="favoraiteBook(book.id)" [style.display]="fav?'block':'none'"
+              class="btn-sg ">Add to Favoraite </button>
+            <button type="button" (click)="buyBook(book.id)" [style.display]="buy?'block':'none'" class="btn-sg">Buy
+            </button>
+            <div class="alert alert-danger mt-1" role="alert" *ngIf="message">
+              {{ message }}
+              <div class="mt-2">
+
+                <a class="nav-link" href="/register" [style.display]="signup?'block':'none'">Sign Up</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="Divider Divider--largeMargin" role="presentation">
+  <h3 class="pb-3">Ratings <span class="Text Text__italic">&amp;</span> Reviews</h3>
+
+  <div class="container-c mt-5 ">
+
+    <div class=" row  ">
+      <div class="col p-3">
+        <div class="card-s bg-light " *ngFor="let comment of comments">
+          <div class="card-body p-5">
+
+            <h5 class="fw-bold  mb-1">{{comment.user_full_name}}</h5>
+            <br>
+            <h6 class=" mb-2">{{comment.user_email}}</h6>
+            <br>
+            <p class="text-muted small mb-0">
+              Shared publicly - {{comment.publish_date|date:"d-M-y"}}
+            </p>
+
+            <div>
+              <span *ngFor="let i of [1,2,3,4,5]" [class]="i <=comment.rate?'filled':'empty'">&#9733; </span>
+            </div>
+            <p class="mt-3 mb-4 pb-2">
+              {{comment.content}}
+            </p>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-c mt-5  " style="background-color:var(--secondary-color)">
+    <div class="row p-3">
+      <div class="col ">
+
+        <div class="card-s  bg-light ">
+          <div class="card-body p-5">
+
+            <h3>Add Rate</h3>
+            <span *ngFor="let i of [1,2,3,4,5]" (click)="rate(i,book.id)"
+              [class]="i <=user_rate?'filled':'empty'">&#9733; </span>
+
+            <textarea class="form-control mb-2 " id="textAreaExample" rows="4" name="comment"
+              [(ngModel)]="textAreaValue.comment" style="background: #fff;" #comment="ngModel"></textarea>
+
+
+
+            <button type="button " class="btn-sg m-1 " (click)="addComment(textAreaValue,book.id)">Post comment</button>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Modal -->
+<!-- Scrollable modal -->
+<div class="modal-dialog modal-dialog-scrollable">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{{book.title}}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe [src]="santizered(book.content)" frameborder="0" width="100%" height="700"></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,585 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --primary-color:#026467 ;
+    --secondary-color:#E5F5EA ;
+    --body-text-color:#596392 ;
+    --navbar-footer-color:#F9F9F9 ;
+}
+.container-c{
+    margin: 75px 50px;
+   
+    padding:5px 20px;
+}
+.bg-theme{
+    background-image: url("http://127.0.0.1:8000/media/home.jpg");
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+
+}
+.mybtn{
+    color: #ffffff;
+    background-color:#026467 ;
+    border-radius: 4px;
+    height: 40px;
+    width: 100px;
+    font-size: 1rem;
+  
+
+}
+label{
+    color: var(--primary-color);
+}
+
+body{
+    font-family: "Robote",sans-serif;
+    font-size: 14px;
+   height: 100%;
+    color: var(--body-text-color);
+}
+footer {
+    position: absolute; /* Position absolute for footer */
+    bottom: 0;
+    left: 0;
+  }
+
+.logo{
+    padding:5px 20px;
+   
+    color:var(--primary-color);
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-right: 20px;
+    padding-top: 1px;}
+
+.nav-link{
+    
+        text-transform: uppercase;
+        color:var(--primary-color);
+        font-size: 1em;
+        cursor: pointer;
+        
+    }
+.pull-left {
+        float: left !important;
+}
+.shadow-effect{
+    border: none;
+    box-shadow: 0px 0px 33px -10px rgba(71, 114, 254,0.3);;
+}
+
+.btn {
+    
+        color: #45b09e !important;
+        border: 1px solid #45b09e !important;
+        font-size: 1em;
+        background: #fff;
+        border-radius: 2px;
+      
+    }
+.btn-sg{
+    
+        margin: 2px;
+            color: #45b09e !important;
+            border: 1px solid #45b09e !important;
+            font-size: 1em;
+            background: #fff;
+            border-radius: 2px;
+            min-height:30px; 
+            min-width: 120px;
+          
+        
+}
+
+.feat{     
+    background-image: url("http://127.0.0.1:8000/media/home.jpg");
+    background-repeat: no-repeat;
+   
+    background-size: cover;     
+    width: 100%;
+    padding-bottom: 10%;
+    
+}
+.back-con{
+    background-image: url("http://127.0.0.1:8000/media/home.jpg");
+    background-repeat: no-repeat;
+  
+    background-size: cover;     
+ 
+ 
+}
+li{
+    padding-left: 10px;
+}
+
+.cont-b{  
+    padding: 10px  10px; 
+    background: #fff;
+     border-radius: 10px;
+    text-align: center;
+     margin-bottom: 30px;
+    border: 1px solid #dadde1 !important;
+    position: relative;
+    transform: translateY(0);
+    transition: all .2s cubic-bezier(.4,0,.2,1);
+    cursor: pointer;
+}
+.sign-up-form {
+    height: 50px;
+    width: 50%;
+    margin-top: 10px;
+    position: relative;
+    padding: 10px;
+    border-radius: 7px;
+  background-color: white;
+}
+.page-search{
+    height: 50px;
+    width: 100px;
+}
+#search {
+    justify-content:flex-start;
+        background-color: transparent;
+        border: 0;
+        padding: 4px 10px;
+        width: 50%;}
+#sub {
+            border: 0;
+            box-shadow: none;
+            background-color:var(--primary-color);
+            border-color: var(--secondary-color);
+            padding: 4px 20px 10px 10px;
+            border-radius: 7px;
+            color:  white;
+            transition: 0.3s;}
+
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color:var(--primary-color);
+    border-radius: 30px;
+    padding: 10px;
+        }
+.search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 20px;
+    transition: width 0.4s linear;
+     }
+            
+.searchbar:hover > .search_input{
+     padding: 0 10px;
+     width:250px;
+      caret-color:var(--secondary-color);
+ }
+            
+ .search_icon{
+    height: 40px;
+   width: 40px;
+   float: right;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    border-radius: 50%;
+    color:white;
+   text-decoration:none;
+}
+ .searchbar:hover > .search_icon{
+    background: white;
+     color:var(--primary-color);
+   }
+            
+
+
+
+.center-t{
+    width: 50%;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 3%;
+    }
+  
+
+.center-s{
+    
+   min-width: 20%;
+   min-height:100% ;
+    margin: auto;
+    padding-top: 100px;
+}
+.contact{
+    width: 70%;
+    height:50% ;
+    margin: auto;
+    padding-top: 50px;
+    
+  
+    
+}
+.card-s{
+    text-align:start;
+    margin-bottom: 30px;
+   border: 1px solid #dadde1 !important;
+   position: relative;
+   transform: translateY(0);
+   transition: all .2s cubic-bezier(.4,0,.2,1);
+   cursor: pointer;
+}
+
+.card{
+    background-color: var(--secondary-color);
+   
+}
+
+.im {
+        
+    height: 300px;
+}
+span{
+    font-size: 1em;  
+}
+
+.filled { 
+    color: #ffc107;
+  }
+  .empty{
+    color:gray
+}
+.card-img-top{
+    height: 250px;
+     width:200px;
+     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
+.card-img{
+    height:100px;
+     width:100px;
+
+}
+
+
+@media only screen and (min-width:56em)  { 
+    
+    
+    h1{   font-size: 2em;
+    }
+    h5{   font-size: 1em;
+    }
+    .feat{
+        height:100%;
+    }
+    .card-img{
+        height:200px;
+         width:200px;
+    }
+
+    .mybtn{          
+            height: 50px;
+            width: 150px;
+            font-size: 1rem;
+            }
+
+.lo{
+    height: 40px;
+    width: 40px;
+} 
+
+h6{   
+    font-size: 1em;
+    white-space: nowrap;
+} 
+span{
+    font-size: 1em;  
+}
+.center-t{
+ 
+    padding-top: 250px;
+    
+    }
+nav{
+    font-size: 0.9em;
+
+    }
+    .logo{
+        font-size: 2em;
+    }
+
+
+inp{
+    height: 50px;
+}
+.btn{
+    height: 75px;
+    width: 150px;
+    font-size: 1.5em;
+    padding-top: 20px;
+    
+}
+
+  }
+  @media only screen and (min-width:59em)  { 
+  
+    .card-img{
+        height:150px;
+         width:150px;
+    }
+   .nav-link{
+    font-size: 1em;
+   } 
+   .btn{
+   height: 50px;
+    width: 100px;
+    font-size: 1.3em;
+ 
+}
+inp{
+    height: 60px;
+}
+.Text__title2{
+    font-size: 1em;
+}
+
+  }
+  @media only screen and  (min-width:90em)  { 
+    .page-search{
+        height: 75px;
+        width: 100px;
+    }
+    .card-img-top{
+        height: 300px;
+         width:300px;
+        
+    }
+    .btn{
+        height:75px ;
+         width: 200px;
+         font-size:2em;
+      
+     }
+    .card-img{
+      height:200px;
+       width:200px;
+  }
+  .mybtn{          
+    height: 100px;
+    width: 300px;
+    font-size: 2rem;
+    }
+  h6{   
+    font-size: 0.8em;
+    white-space: nowrap;
+}
+.ser {
+
+        height: 50px;}
+.nav-link{
+    font-size: 1.5em;
+
+        }
+        
+        .Text__title2{
+            font-size: 1em;
+        }
+}
+
+@media only screen and (min-width: 140em) { 
+    .Text__title2{
+        font-size: 1em;
+    }
+    .card-img-top{
+        height: 100%;
+         width:100%;
+        
+    }
+    textarea{
+        height: 300px;
+    }
+    .btn{
+        height:100px ;
+         width: 250px;
+         font-size: 1em;
+      
+     }
+    h6{   
+        font-size: 0.8em;
+        white-space: nowrap;
+    } 
+    .feat{
+        height: 150%;
+    }
+    .card-img{
+        height:300px;
+         width:300px;  
+    }
+    h1{   font-size: 1.5em;
+    }
+    h2{   font-size: 1em;
+    }
+    h4{   font-size: 0.8em;
+    }
+    .container-c{
+        margin: 100px 75px;}
+ 
+    body{
+   
+        font-size: 3em;}
+    
+    span{
+        font-size: 1em;  
+    }
+    .lo{
+        height: 100px;
+        width: 80px;
+        
+    } 
+    .searchbar{
+        height: 150px;
+        width:150px;
+        background-color:var(--primary-color);
+        border-radius:70px;
+        padding: 20px;
+    }
+    .search_icon{
+        height: 100px;
+       width: 100px;
+   
+    }
+    .searchbar:hover > .search_input{
+        width: 500px;
+    }
+    .mybtn{          
+        height: 100px;
+        width: 300px;
+        font-size: 1em;
+        }
+  
+  
+   
+nav{
+    height: 150px;
+   
+}
+.center-t{
+    padding-top: 700px;
+    padding-bottom: 3%;
+}
+.bg-theme{
+    height: 700px;
+}
+.container-c{
+    margin: 150px 75px;
+padding-top: 100px;}
+.nav-link{
+    font-size: 0.7em;
+
+        }
+h3{
+    font-size: 1em;
+    color: #596392;
+    font-style: var(--primary-color);
+
+}
+input{
+    size: 20px;
+}
+.page-search{
+    height: 75px;
+    width: 100px;
+}
+
+}
+@media only screen and (min-width: 240em) { 
+    .card-img-top{
+        height: 100vh;
+         width:800px;
+        
+    }
+    .nav-link{
+        font-size:1.5em;
+    
+            }
+    .bg-theme{
+        height: 900px;
+    }
+    h6{   
+        font-size: 1em;
+        white-space: nowrap;
+    } 
+    .feat{
+        height: 200%;
+    }
+    .card-img{
+        height:700px;
+         width:700px;  
+    }
+    h1{   font-size: 2em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    h4{   font-size: 1.3em;
+    }
+
+    body{
+   
+        font-size: 3em;}
+    
+    span{
+        font-size: 2em;  
+    }
+    .lo{
+        height: 150px;
+        width: 150px;
+        
+    } 
+    .logo{
+      font-size: 2em;  
+    }
+    .searchbar{
+        height: 150px;
+        width:150px;
+        background-color:var(--primary-color);
+        border-radius:70px;
+        padding: 20px;
+    }
+    .search_icon{
+        height: 100px;
+       width: 100px;
+   
+    }
+    .searchbar:hover > .search_input{
+        width: 500px;
+    }
+    
+  
+
+   
+nav{
+    height: 200px;
+   
+}
+
+.center-t{
+    padding-top: 700px;
+    padding-bottom: 3%;
+}
+.page-search{
+    height: 150px;
+    width: 100px;
+}
+.mybtn{          
+    height: 150px;
+    width:400px;
+    font-size: 1.5em;
+    }
+    .container-c{
+        margin: 150px 75px;
+    padding-top: 100px;}
+
+
+}
+

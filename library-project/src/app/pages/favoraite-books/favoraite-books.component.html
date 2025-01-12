@@ -1,0 +1,46 @@
+<div class="bg-theme p-5">
+
+    <div class="container-c">
+
+        <h1 class="text-white"> Favoraite Books</h1>
+    </div>
+
+</div>
+<div class="alert alert-danger mt-4" role="alert" *ngIf="message">
+    {{ message }}
+    <div class="mt-2">
+
+        <a class="nav-link" href="/books">Books</a>
+    </div>
+</div>
+<section>
+    <div class="container-c">
+
+        <div class=" row justify-content-between mb-5">
+            <div class="col-7 col-md-5 col-sm-4 col-xs-4 col-lg-5  ">
+                <div class=" input-group  rounded">
+                    <input type="search" class="form-control page-search rounded" [(ngModel)]="searchId" name="searchId"
+                        placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                    <span class="input-group-text border-0" id="search-addon">
+                        <a [routerLink]="['search',{search:searchId}]" type="submit" class=""><i
+                                class="bi bi-search"></i></a>
+                    </span>
+                </div>
+            </div>
+
+
+        </div>
+
+        <ul>
+            <div class="row">
+
+                <div class="col-md-4 mb-3" *ngFor="let favoraite of favoraiteBooks ">
+                    <app-book-card [parentData]="favoraite"></app-book-card>
+                </div>
+
+            </div>
+        </ul>
+    </div>
+
+
+</section>

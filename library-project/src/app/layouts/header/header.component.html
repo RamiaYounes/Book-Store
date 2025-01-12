@@ -1,0 +1,49 @@
+     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand logo " href="/">
+          <img src="http://127.0.0.1:8000/media/logo.png" (click)="home()" alt="" width="30" height="24" class="d-inline-block lo  ">
+          Library
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page"  href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/books">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/books/favoraite" [style.display]="logoutDisably?'block':'none'"  >Favoraite Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/books/purches" [style.display]="logoutDisably?'block':'none'"  >Purches </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/books/free"  >Free Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact-us" [style.display]="logoutDisably?'block':'none'">contact us</a>
+            </li>
+      
+          </ul>
+         
+            <ul class="navbar-nav ml-5 mb-2 mb-lg-0">
+             
+              <li class="nav-item">
+                <a class="nav-link" href="/register" [style.display]="registerdisably?'block':'none'"  >Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [style.display]="logoutDisably?'block':'none'" (click)="logout()" >Logout</a>
+              </li>
+            </ul>
+       
+        
+        </div>
+      </div>
+    </nav>
+   
+    
+
