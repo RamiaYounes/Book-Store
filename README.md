@@ -37,17 +37,17 @@ To set up the project locally, follow these steps:
 
 3. Setup Django Project:
    - Open a new Terminal and go to django-library
-      $ cd /django-library
+      $cd /django-library
 
-  - Create a virtual environment (optional but recommended):
-     $ python -m venv env
+   - Create a virtual environment (optional but recommended):
+     $python -m venv env
  
-  - Activate the virtual environment:
-     $ source env/bin/activate
+   - Activate the virtual environment:
+     $source env/bin/activate
 
-  - Run the server
-    $ python manage.py runserver
-  - Go to localhost:8000
+   - Run the server
+     $python manage.py runserver
+   - Go to localhost:8000
 
 
 
