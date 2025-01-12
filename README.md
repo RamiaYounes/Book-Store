@@ -23,43 +23,43 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository:
 
-   git clone https://github.com/RamiaYounes/Book-Store.git
+     git clone https://github.com/RamiaYounes/Book-Store.git
    
 3. Setup Angular Project:
    - Navigate into the project directory:
 
-     cd Book-Store/library-project
+       cd Book-Store/library-project
      
    - Install node dependencies
 
-     npm install
+       npm install
      
    - Run the angular server (Optional: required during development only):
 
-     ng serve
+       ng serve
      
     Do not close this terminal
 
    - See check to see if it works in the browser (Optional: It is required during front-end development only)
 
-      http://localhost:4200
+        http://localhost:4200
 
 4. Setup Django Project:
    - Open a new Terminal and go to django-library
 
-     cd /django-library
+       cd /django-library
 
    - Create a virtual environment (optional but recommended):
 
-     python -m venv env
+       python -m venv env
  
    - Activate the virtual environment:
 
-     source env/bin/activate
+       source env/bin/activate
 
    - Run the server
 
-     python manage.py runserver
+       python manage.py runserver
      
    - Go to http://localhost:8000
 
